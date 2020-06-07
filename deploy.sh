@@ -1,3 +1,4 @@
+echo "start deployment"
 docker build -t holbora/multi-client:latest -t holbora/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t holbora/multi-server:latest -t holbora/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t holbora/multi-worker:latest -t holbora/multi-worker:$SHA -f ./worker/Dockerfile ./worker
